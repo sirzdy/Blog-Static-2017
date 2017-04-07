@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="张丹阳,zhangdanyang,张sir,blog,博客,program,编程,mainpage,主页">
+    <meta name="description" content="张丹阳的个人博客——既然选择了远方，便只顾风雨兼程。ZhangDanyang's Personal Blog">
+    <Meta name="Robots" Content="All">
+    <meta name="author" content="张丹阳,boxuerixin@hotmail.com">
+    <Meta name="Copyright" Content="本页版权归张丹阳所有。All Rights Reserved">
+    <title>张丹阳的简历</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/resume.css">
+    <style>
+        #loading{
+            background-color: #374140;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+            margin-top: 0px;
+            top: 0px;
+        }
+        #loading-center{
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        #loading-center-absolute {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            height: 150px;
+            width: 150px;
+            margin-top: -75px;
+            margin-left: -75px;
+        }
+        .object{
+            width: 20px;
+            height: 20px;
+            background-color: #FFF;
+            float: left;
+            margin-right: 20px;
+            margin-top: 65px;
+            -moz-border-radius: 50% 50% 50% 50%;
+            -webkit-border-radius: 50% 50% 50% 50%;
+            border-radius: 50% 50% 50% 50%;
+        }
+
+        #object_one {
+            -webkit-animation: object_one 1.5s infinite;
+            animation: object_one 1.5s infinite;
+        }
+        #object_two {
+            -webkit-animation: object_two 1.5s infinite;
+            animation: object_two 1.5s infinite;
+            -webkit-animation-delay: 0.25s;
+            animation-delay: 0.25s;
+        }
+        #object_three {
+            -webkit-animation: object_three 1.5s infinite;
+            animation: object_three 1.5s infinite;
+            -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+        }
+        @-webkit-keyframes object_one {
+            75% { -webkit-transform: scale(0); }
+        }
+        @keyframes object_one {
+
+            75% {
+                transform: scale(0);
+                -webkit-transform: scale(0);
+            }
+        }
+        @-webkit-keyframes object_two {
+            75% { -webkit-transform: scale(0); }
+        }
+        @keyframes object_two {
+            75% {
+                transform: scale(0);
+                -webkit-transform:  scale(0);
+            }
+        }
+        @-webkit-keyframes object_three {
+
+            75% { -webkit-transform: scale(0); }
+        }
+        @keyframes object_three {
+
+            75% {
+                transform: scale(0);
+                -webkit-transform: scale(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div id="loading">
+    <div id="loading-center">
+        <div id="loading-center-absolute">
+            <div class="object" id="object_one"></div>
+            <div class="object" id="object_two"></div>
+            <div class="object" id="object_three"></div>
+        </div>
+    </div>
+</div>
+<div class="btn-close">
+    <i class="fa fa-close fa-3x"></i>
+</div>
+<div class="container" onselect="return false;" onselectstart="return false;" oncontextmenu="return false;">
+    <table class="navigation">
+        <tr>
+            <th>
+                <div class="th-block img-rounded" target="info">
+                    <i class="fa fa-user fa-3x"></i>
+                    <span class="th-title">基本信息</span>
+                </div>
+            </th>
+            <th>
+                <div class="th-block img-rounded" target="skill">
+                    <i class="fa fa-bar-chart  fa-3x"></i>
+                    <span class="th-title">专业技能</span>
+                </div>
+            </th>
+            <th>
+                <div class="th-block img-rounded" target="project">
+                    <i class="fa fa-code fa-3x"></i>
+                    <span class="th-title">项目经历</span>
+                </div>
+            </th>
+        </tr>
+        <tr>
+
+            <th>
+                <div class="th-block img-rounded" target="work">
+                    <i class="fa fa-suitcase fa-3x"></i>
+                    <span class="th-title">工作经历</span>
+                </div>
+            </th>
+
+            <th>
+                <div class="th-block img-rounded" onclick="window.location.href='index.html'">
+                    <i class="fa fa-home fa-3x" style="color: #F0F8FF;"></i>
+                    <span class="th-title">主页</span>
+                </div>
+            </th>
+            <th>
+                <div class="th-block img-rounded" target="edu">
+                    <i class="fa fa-graduation-cap fa-3x"></i>
+                    <span class="th-title">教育经历</span>
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <div class="th-block img-rounded" target="eva">
+                    <i class="fa fa-eye fa-3x"></i>
+                    <span class="th-title">自我评价</span>
+                </div>
+            </th>
+
+            <th>
+                <div class="th-block img-rounded" target="to">
+                    <i class="fa fa-pencil fa-3x"></i>
+                    <span class="th-title" >致读者</span>
+                </div>
+            </th>
+            <th>
+                <div class="th-block img-rounded" target="about">
+                    <i class="fa fa-picture-o fa-3x"></i>
+                    <span class="th-title">了解我</span>
+                </div>
+            </th>
+        </tr>
+    </table>
+</div>
+
+<section id="info">
+    <div class="page-header">
+        <h1><i class="fa fa-user "></i> 基本信息
+            <small> Essential Infomation</small>
+        </h1>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            基本信息
+        </div>
+        <div class="panel-body">
+            <ul class="list-group">
+                <li class="list-group-item">姓名：张丹阳</li>
+                <li class="list-group-item">性别：男</li>
+                <li class="list-group-item">民族：汉</li>
+                <li class="list-group-item">学历：本科</li>
+                <li class="list-group-item">出生年月：1994.12</li>
+                <li class="list-group-item">籍贯：山东省济南市</li>
+                <li class="list-group-item">政治面貌：中共党员</li>
+                <li class="list-group-item">目前所在地：北京市</li>
+            </ul>
+        </div>
+        <div class="panel-footer">
+            敏感信息请注意保密，谢谢。
+        </div>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            联系方式
+        </div>
+        <div class="panel-body">
+            <ul class="list-group">
+                <li class="list-group-item">电话：+86 13969013051　<a href="tel:+86 13969013051"><i class="fa fa-phone fa-lg"></i></a></li>
+                <li class="list-group-item">邮箱：boxuerixin@hotmail.com　<a href="mailto:boxuerixin@hotmail.com"><i class="fa fa-envelope-o fa-lg"></i></a></li>
+                <li class="list-group-item">微信：Zhangdanyang_　<i class="fa fa-qrcode fa-lg qrcode"></i><img src="img/wechat.JPG" style="display: none" width="100"></li>
+                <li class="list-group-item">微信公众号：sirzdy　<i class="fa fa-qrcode fa-lg qrcode"></i><img src="img/wechat-public.jpg" style="display: none" width="100"></li>
+                <li class="list-group-item">个人主页：<a href="http://zhangdanyang.com/">http://zhangdanyang.com/</a></li>
+                <li class="list-group-item">简书博客：<a href="http://www.jianshu.com/u/97887a368d79">http://www.jianshu.com/u/97887a368d79</a></li>
+            </ul>
+        </div>
+        <div class="panel-footer">
+            敏感信息请注意保密，谢谢。
+        </div>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            兴趣爱好
+        </div>
+        <div class="panel-body">
+            <ul class="list-group">
+                <li class="list-group-item">喜欢的事情：计算机/数码/旅游/运动/游戏</li>
+                <li class="list-group-item">最喜欢的一首音乐：水边的阿迪丽娜</li>
+                <li class="list-group-item">最喜欢的颜色：蓝色，白色，黑色</li>
+                <li class="list-group-item">最喜欢的数字：7，25</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section id="project">
+    <div class="page-header">
+        <h1><i class="fa fa-code "></i> 项目经历
+            <small> Project Experience</small>
+        </h1>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            工作与实习项目经历
+        </div>
+        <div class="panel-body" style="display: block">
+            <div class="table-responsive">
+                <table class="table">
+                    <tr class="info">
+                        <th>名称</th>
+                        <th>时间</th>
+                        <th>技术</th>
+                        <th>模式</th>
+                        <th>内容</th>
+                        <th>示例或源码</th>
+                    </tr>
+                    <tr class="active">
+                        <td>微信版网银密码输入控件</td>
+                        <td>2016.12-2017.03</td>
+                        <td>JavaScript jQuery Java（Awt、ImageIO）</td>
+                        <td>独立开发</td>
+                        <td>网银乱序密码输入键盘与模拟输入框等</td>
+                        <td>保密</td>
+                    </tr>
+                    <tr class="active">
+                        <td>网银安全助手原型设计</td>
+                        <td>2017.02</td>
+                        <td>Mockplus</td>
+                        <td>独立设计</td>
+                        <td>设计网银助手原型，模拟网银助手使用</td>
+                        <td>保密</td>
+                    </tr>
+                    <tr class="active">
+                        <td>app版网银金额账户输入控件</td>
+                        <td>2017.01-2017.03</td>
+                        <td>JavaScript jQuery</td>
+                        <td>独立开发</td>
+                        <td>网银金额账号输入键盘与模拟输入框等</td>
+                        <td>保密</td>
+                    </tr>
+                    <tr class="active">
+                        <td>光大银行信息系统</td>
+                        <td>2016.12至今</td>
+                        <td>C++ Duilb</td>
+                        <td>协助同事开发</td>
+                        <td>实现银行转账等信息批量录入导入导出，进行增删改查等</td>
+                        <td>保密</td>
+                    </tr>
+                    <tr class="active">
+                        <td>web版网银密码输入控件</td>
+                        <td>2016.11-2016.12</td>
+                        <td>JavaScript jQuery</td>
+                        <td>独立开发</td>
+                        <td>网银密码安全输入控件</td>
+                        <td>保密</td>
+                    </tr>
+                    <tr class="active">
+                        <td>移动运营商我的工作台展示</td>
+                        <td>2016.04</td>
+                        <td>JavaScript jQuery Bootstrap HighCharts</td>
+                        <td>独立设计</td>
+                        <td>移动运营商我的工作台，绘制各种图表（折线图饼图柱状图）</td>
+                        <td>保密</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            个人项目经历
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <tr class="info">
+                        <th>名称</th>
+                        <th>时间</th>
+                        <th>技术</th>
+                        <th>模式</th>
+                        <th>内容</th>
+                        <th>示例或源码</th>
+                    </tr>
+                    <tr class="active">
+                        <td>立方体</td>
+                        <td>2017.02</td>
+                        <td>css</td>
+                        <td>独立设计</td>
+                        <td>纯CSS实现立方体动画效果</td>
+                        <td><a href="http://zhangdanyang.com/Works/Cube/">实例</a></td>
+                    </tr>
+                    <tr class="active">
+                        <td>七巧板拼图</td>
+                        <td>2017.02</td>
+                        <td>SVG Canvas JavaScript jQuery BootStrap</td>
+                        <td>独立设计</td>
+                        <td>使用七巧板拼图</td>
+                        <td><a href="http://zhangdanyang.com/Works/Tangram/tangram.html">实例</a><br><a href="https://github.com/sirzdy/TangramSVG">源码（SVG版）</a></td>
+                    </tr>
+                    <tr class="active">
+                        <td>班级信息统计系统</td>
+                        <td>2017.01</td>
+                        <td>Java JSP Listener Filter MySql JavaScript jQuery Bootstrap</td>
+                        <td>独立开发</td>
+                        <td>班级信息收集系统，完善个人信息并查看所有人信息，实现了注册登录，上传头像，编辑个人信息与个人状态以及留言等。</td>
+                        <td><a href="http://zhangdanyang.com/MyClass">实例</a><br><a href="https://github.com/sirzdy/MyClass">源码</a></td>
+                    </tr>
+                    <tr class="active">
+                        <td>头像裁剪</td>
+                        <td>2017.01</td>
+                        <td>Canvas JavaScript jQuery BootStrap </td>
+                        <td>独立设计</td>
+                        <td>上传图片，裁剪图片，可以缩放移动旋转</td>
+                        <td><a href="http://zhangdanyang.com/Works/AvatarCrop/">实例</a><br><a href="https://github.com/sirzdy/AvatarCropDemo">源码</a></td>
+                    </tr>
+                    <tr class="active">
+                        <td>个人主页</td>
+                        <td>2016.07至今</td>
+                        <td>html5 css3 JavaScript jQuery Bootstrap HighCharts Echarts typedjs fullpagejs </td>
+                        <td>独立开发</td>
+                        <td>个人主页，之前使用个人博客主页作为默认主页，后改为静态html页面，目前部署在vultr达拉斯服务器上。中间经历过数次更新，一次大的更新</td>
+                        <td><a href="http://zhangdanyang.com/">最新个人主页</a> <br> <a href="http://zhangdanyang.com/Works/Fullpage/index.html">旧版个人主页</a></td>
+                    </tr>
+                    <tr class="active">
+                        <td>个人博客</td>
+                        <td>2016.03至今</td>
+                        <td>WordPress</td>
+                        <td>独立搭建</td>
+                        <td>主要用于在2016年12月及以前更新发布个人博客，现在主要在简书更博，此网站更新频率较低。部署在阿里云服务器。</td>
+                        <td><a href="http://www.zhangdanyang.com/">个人博客</a> <br> <a href="http://www.jianshu.com/p/56750622cac9">搭建 WordPress 博客教程</a></td>
+                    </tr>
+                    <!--<tr class="active">
+                        <td>简书</td>
+                        <td>2016.03至今</td>
+                        <td>Markdown</td>
+                        <td>写作</td>
+                        <td>发布学习笔记与教程，最多的文章访问量已经1.7w+</td>
+                        <td><a href="http://www.jianshu.com/u/97887a368d79">简书</a></td>
+                    </tr>-->
+                    <tr class="active">
+                        <td>搭建ShadowSocks服务</td>
+                        <td>2016.11至今</td>
+                        <td>Linux</td>
+                        <td>独立研究</td>
+                        <td>使用美国达拉斯服务器搭建ShadowSocks服务，用于查询资料</td>
+                        <td><a href="http://www.jianshu.com/p/4bf38b9d5d78">搭建ShadowSocks教程</a></td>
+                    </tr>
+                    <tr class="active">
+                        <td>Github 个人主页</td>
+                        <td>2016.03-2016.11</td>
+                        <td>Hexo</td>
+                        <td>独立研究</td>
+                        <td>使用Github Pages托管个人静态主页，后来由于简书对Markdown友好的支持，全面投入简书，此被废弃</td>
+                        <td><a href="http://www.jianshu.com/p/d63e7e021981">Github+Hexo+NexT快速建站教程</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            大学项目经历
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <tr class="info">
+                        <th>名称</th>
+                        <th>时间</th>
+                        <th>技术</th>
+                        <th>模式</th>
+                        <th>内容</th>
+                        <th>示例或源码</th>
+                    </tr>
+                    <tr class="active">
+                        <td>在线软件工程开发平台</td>
+                        <td>2015.12</td>
+                        <td>jQuery,ajax,mvc,s2sh</td>
+                        <td>秘书</td>
+                        <td>搭建一个供商业用户发布需求项目任务、寻找合适开发人员，同时供开发人员学习开发技能、获取开发经验以及寻找开发项目的平台，来解决人力不足导致的项目开发搁置的问题。</td>
+                        <td><a href="https://github.com/sirzdy/HZML">源码</a></td>
+                    </tr>
+                    <tr class="active">
+                        <td>交通灯模拟系统</td>
+                        <td>2015.12</td>
+                        <td>嵌入式 stm32 Contex-m </td>
+                        <td>独立开发</td>
+                        <td>通过使用STM32开发板实现交通灯光与计时的模拟。</td>
+                        <td><a href="https://pan.baidu.com/s/1boOD6gv">源码</a></td>
+                    </tr>
+                    <tr class="active">
+                        <td>电子时计与闹钟</td>
+                        <td>2015.09</td>
+                        <td>汇编 TPC-ZK-USB</td>
+                        <td>二人合作</td>
+                        <td>使用汇编与接口技术实现开发板上的LED计时效果。主要应用①可编程定时器（8253）②主从片中断③扬声器发音（LED灯显示）④数据缓存⑤数码管。主要功能：时钟，计时，倒计时。</td>
+                        <td><a href="https://pan.baidu.com/s/1jHGXLSM">源码</a></td>
+                    </tr>
+                    <tr class="active">
+                        <td>超市管理系统</td>
+                        <td>2015.05</td>
+                        <td>JSP MVC MySql Tomcat</td>
+                        <td>组长</td>
+                        <td>实现出售进货，货物查询，业绩查询，业务员管理等操作。为超市管理员提供进货登记、销售登记、查看销售业绩以及利润以调整发展战略实现利润最大化等功能。</td>
+                        <td><a href="https://pan.baidu.com/s/1kULFyZ1">源码</a></td>
+                    </tr>
+                    <tr class="active">
+                        <td>汽车销售管理系统</td>
+                        <td>2014.12</td>
+                        <td>JSP MySql GlassFish</td>
+                        <td>组长</td>
+                        <td>实现出售进货，货物查询，业绩查询，业务员管理等操作。</td>
+                        <td><a href="https://pan.baidu.com/s/1i4O1qXf">源码</a></td>
+                    </tr>
+                    <tr class="active">
+                        <td>马踏棋盘</td>
+                        <td>2013.08</td>
+                        <td>C EASYGUI</td>
+                        <td>组长</td>
+                        <td>使用C语言运用遍历结合easyGUI完成马踏棋盘的制作。</td>
+                        <td><a href="https://pan.baidu.com/s/1pLhlUen">源码</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="eva">
+    <div class="page-header">
+        <h1><i class="fa fa-eye "></i> 自我评价
+            <small> Self-Evaluation</small>
+        </h1>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            职业相关
+        </div>
+        <div class="panel-body">
+            <div class="alert alert-info" role="alert">
+                热爱编程，尤其喜欢前端。<br>
+                独立开发过JS控件，Java+JS控件。<br>
+                乐于并好于去发现研究好玩的库插件。<br>
+                熟悉基本的数据结构和算法。<br>
+                具有良好的逻辑思维能力。<br>
+                具有良好的英语基础，能够阅读英文文档，并在不断学习英语。<br>
+                具有良好的学习能力，接受新事物较快。<br>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            品德素质
+        </div>
+        <div class="panel-body">
+            <div class="alert alert-info" role="alert">
+                爱钻研爱折腾<br>
+                乐于发现并接受新事物<br>
+                有责任心<br>
+                追求完美<br>
+                诚信正直<br>
+                吃苦耐劳<br>
+                热心诚恳<br>
+                乐观向上<br>
+                良好的沟通能力<br>
+                良好的思想品德<br>
+                良好的团队协作<br>
+                <br>
+                意志力薄弱，自制力差<br>
+                急功近利，急于求成<br>
+                自以为是，过于自我<br>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="to">
+    <div class="page-header">
+        <h1><i class="fa fa-sticky-note"></i> 致读者
+            <small> To My Readers</small>
+        </h1>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            编程思想 与 代码之美
+        </div>
+        <div class="panel-body">
+            <div class="alert alert-info" role="alert">
+                以前一直觉得作为一个程序员抑或是工程师基础知识很重要，后来写了越来越多的代码，接触了更多更多的编程语言，便越来越来越意识到，思想很重要。
+                其实在代码世界里，解决一个问题，实现一个效果的方法千千万万，而总有一种方法被你所发现并被你所采用。记得初中生物老师特别喜欢说的一句话："学以致用"。我更喜欢把学以致用与举一反三相结合。
+                也许我们的基础知识储备不够强大，但是我们要能使用我们所了解掌握的知识去探索出来解决问题的非常规方案。写程序有时候就像是做选择题，我们也应该合理利用排除法，反证法等等（其实，生活也是如此吧）。
+                <br>
+                虽然不是处女座，但是自己算的上是一个有强迫症的人，不喜欢命名不规范，不喜欢命名没规律。遇到这种情况，喜欢用正则替换等方式纠正命名。
+                在我的代码世界中，各种语言都用四个空格（起码长度如此，也许是一个tab符号）作为一个缩进。层次也要合理，下一级的都要在上一级的基础上缩进。所以，我感觉Visual Studio非常棒，写的时候就可以帮你调整代码。
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            有朋自远方来，不亦乐乎？
+        </div>
+        <div class="panel-body">
+            <div class="alert alert-info" role="alert">
+                如果你是一个程序员或者工程师，如果有比较新奇的想法问题欢迎与我交流讨论。
+            </div>
+            <div class="alert alert-info" role="alert">
+                如果你是一名猎头或HR，我想你肯定对"伯乐相马"有独特的见解，也欢迎你看看我是不是你理想中的千里马。
+            </div>
+            <div class="alert alert-info" role="alert">
+                如果你是一个普通的读者，如果你对我感兴趣的话，也欢迎与我交流，也许我们未来能够成为好朋友。当然了，自认为计算机使用与维护修理方面都还不错，也许能够帮的到你。
+            </div>
+        </div>
+    </div>
+</section>
+<section id="skill" >
+    <div class="page-header">
+        <h1><i class="fa fa-bar-chart"></i> 专业技能
+            <small> Skill</small>
+        </h1>
+    </div>
+    <div id="skillChart" class="chart" style="width: 600px;height:400px;"></div>
+    <div id="webChart"  class="chart" style="width: 600px;height:400px;"></div>
+    <div style="max-width: 600px;margin:0 auto">
+        <div class="alert alert-info" role="alert">目前主要使用的开发工具如下：WebStorm,IntelliJ IDEA,Visual Studio</div>
+        <div class="alert alert-info" role="alert">目前主要使用的版本控制工具如下：Git,SVN</div>
+        <div class="alert alert-info" role="alert">目前主要使用的原型设计工具如下：MockPlus</div>
+    </div>
+</section>
+<section id="work">
+    <div class="page-header">
+        <h1><i class="fa fa-suitcase "></i> 工作经历
+            <small> Work Experience</small>
+        </h1>
+    </div>
+    <div class="table-responsive">
+        <table class="table">
+            <tr class="info">
+                <th>公司</th>
+                <th>时间</th>
+                <th>职位</th>
+                <th>地点</th>
+                <th>主要任务</th>
+            </tr>
+            <tr class="active">
+                <td>北京科蓝软件系统股份有限公司</td>
+                <td>2016.07至今</td>
+                <td>网银安全产品团队 <br> 软件开发工程师</td>
+                <td>北京</td>
+                <td>进行培训（vx pe java） <br> 进行网银密码账号金额输入控件编写（web，java） <br> 制作网银助手与银行工具客户端（c++，duilib）</td>
+            </tr>
+            <tr class="active">
+                <td>北京东方国信科技股份有限公司</td>
+                <td>2016.04-2016.06</td>
+                <td>实习生</td>
+                <td>北京</td>
+                <td>进行培训（业务 java oracle） <br> 开发数据库数据增删改查系统（java ssi） <br>开发运营商工作台（web）</td>
+            </tr>
+        </table>
+    </div>
+</section>
+<section id="edu">
+    <div class="page-header">
+        <h1><i class="fa fa-graduation-cap "></i> 教育经历
+            <small> Education Experience</small>
+        </h1>
+    </div>
+    <div class="table-responsive">
+        <table class="table">
+            <tr class="info">
+                <th>学校</th>
+                <th>学历</th>
+                <th>时间</th>
+                <th>职位</th>
+                <th>地点</th>
+                <th>获奖情况</th>
+            </tr>
+            <tr class="active">
+                <td>郑州大学</td>
+                <td>本科</td>
+                <td>2012.09-2016.06</td>
+                <td>班长</td>
+                <td>河南省郑州市</td>
+                <td>国家励志奖学金<br>郑州大学优秀毕业生<br>校ACM比赛一等奖<br>全国大学生统计建模大赛优秀奖<br>校优秀学生干部</td>
+            </tr>
+            <tr class="active">
+                <td>山东省实验中学</td>
+                <td>高中</td>
+                <td>2009.09-2012.06</td>
+                <td>卫生委员、英语课代表</td>
+                <td>山东省济南市</td>
+                <td>三好学生</td>
+            </tr>
+        </table>
+    </div>
+</section>
+<section id="about" >
+    <div class="page-header">
+        <h1><i class="fa fa-picture-o"></i> 了解我
+            <small> About Me</small>
+        </h1>
+    </div>
+            <ul>
+                <li>
+                    <a href="javascript:void(0);">
+                        <h2>更多</h2>
+                        <p>敬请期待</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <!--<h2>邮箱</h2>
+                        <p>boxuerixin@hotmail.com</p>-->
+                        <img src="img/photo/18.jpg" width="100%" height="100%" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="img/photo/17.jpg" width="100%" height="100%" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="img/photo/16.jpg" width="100%" height="100%" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="img/photo/15.jpg" width="100%" height="100%" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="img/photo/14.jpg" width="100%" height="100%" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="img/photo/13.jpg" width="100%" height="100%" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="img/photo/12.jpg" width="100%" height="100%" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="img/photo/11.jpg" width="100%" height="100%" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="img/photo/10.jpg" width="100%" height="100%" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="img/photo/9.jpg" width="100%" height="100%" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="img/photo/8.jpg" width="100%" height="100%" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="img/photo/7.jpg" width="100%" height="100%" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="img/photo/6.jpg" width="100%" height="100%" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="img/photo/5.jpg" width="100%" height="100%" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="img/photo/4.jpg" width="100%" height="100%" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="img/photo/3.jpg" width="100%" height="100%" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="img/photo/2.jpg" width="100%" height="100%" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="img/photo/1.jpg" width="100%" height="100%" alt="">
+                    </a>
+                </li>
+            </ul>
+</section>
+<script src="js/jquery.min.js"></script>
+<script src="js/highcharts.js"></script>
+<script src="js/highcharts-more.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/resume.js"></script>
+</body>
+
+</html>

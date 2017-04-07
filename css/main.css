@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei UI","Microsoft YaHei";
+}
+
+.logo {
+    position: absolute;
+    /*width: 108px;*/
+    /*height: 108px;*/
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    cursor: pointer;
+}
+
+.main {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/background-pattern.png");
+}
+.footer{
+    position: absolute;
+    top:100%;
+    left:50%;
+    transform: translateX(-50%) translateY(-100%);
+}
+.link:hover {
+    transform: scale(1.2);
+}
+
+.main-area {
+    position: fixed;
+    top: 0%;
+}
+/*logo*/
+@media only screen and (min-height:500px){
+    .logo div:after{
+        content: url("../img/logo-b.png");
+        border-radius:25px 20px 15px 10px;
+    }
+}
+/*search*/
+.search-area {
+    padding-top: 10px;
+}
+/*music*/
+.radio {
+    position: fixed;
+    top: 100%;
+    transform: translateY(-100%);
+    left: -330px;
+    transition: all 1s;
+    cursor: pointer;
+}
+/*resume*/
+.resume {
+    position: fixed;
+    top: 100%;
+    transform: translateY(-100%);
+    right: 0px;
+    transition: all 1s;
+    cursor:pointer;
+}
+/*typed*/
+.head-text {
+    padding: 10px 0 0 0;
+    min-height: 215px;
+    color: #555;
+    font-size: 2em;
+    text-shadow: #999 0px 2px 4px;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .head-text {
+        padding: 50px 0 0;
+        min-height: 180px;
+        font-size: 1.75em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .head-text {
+        padding: 30px 0 0;
+        min-height: 150px;
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .head-text {
+        padding: 20px 0 0;
+        font-size: 1em;
+        min-height: 110px;
+        margin: 0 -100px;
+    }
+}
+
+.typed-cursor {
+    font-weight: 100;
+    padding: 0 2px;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    -ms-animation: blink 1s infinite;
+    -o-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="张丹阳,zhangdanyang,张sir,blog,博客,program,编程,mainpage,主页">
+    <meta name="description" content="张丹阳的个人博客——既然选择了远方，便只顾风雨兼程。ZhangDanyang's Personal Blog">
+    <Meta name="Robots" Content="All">
+    <meta name="author" content="张丹阳,boxuerixin@hotmail.com">
+    <Meta name="Copyright" Content="本页版权归张丹阳所有。All Rights Reserved">
+    <!--最新版本，注意更新-->
+    <meta name="revised" content="张丹阳, 2017/3/30/">
+    <title>张丹阳</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="main">
+    <div class="logo" onclick="window.location.href='http://www.zhangdanyang.com/'">
+        <div></div><!--logo图-->
+    </div>
+    <!--<img src="img/logo.png" title="主页" alt="主页" class="img-circle" >-->
+    <div class="container-fluid main-area">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4 col-sm-offset-2 col-md-offset-3 col-lg-offset-4">
+                <div class="btn-group btn-group-justified " style="padding-top: 20px">
+                    <div class="btn-group " role="group">
+                        <button type="button" class="btn btn-default link"
+                                onclick="window.location.href='http://www.zhangdanyang.com/'"><i class="fa fa-home"></i>
+                            主页
+                        </button>
+                    </div>
+                    <div class="btn-group " role="group">
+                        <button type="button" class="btn btn-default link"
+                                onclick="window.location.href='http://www.jianshu.com/u/97887a368d79'"><i
+                                class="fa fa-book"></i> 简书
+                        </button>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default link"
+                                onclick="window.location.href='http://github.com/sirzdy'"><i class="fa fa-github"></i>
+                            Github
+                        </button>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default link" data-toggle="modal" data-target="#myWorks"><i
+                                class="fa fa-th-list"></i> 作品
+                        </button>
+                    </div>
+                </div>
+                <!--search start-->
+                <div id="search" class="form-group">
+                    <div class="input-group  search-area">
+                        <span class="input-group-addon">
+                            <i class="fa fa-home"></i>
+                        </span>
+                        <input for="blog" type="text" class="form-control searchinput" placeholder="博客搜索"/>
+                        <span class="input-group-addon btn searchbtn">
+			        	    <i class="fa fa-search"></i>
+			            </span>
+                    </div>
+                    <div class="input-group search-area">
+                        <span class="input-group-addon">
+                            <i class="fa fa-paw"></i>
+                        </span>
+                        <input for="baidu" type="text" class="form-control searchinput" placeholder="百度搜索"/>
+                        <span class="input-group-addon btn searchbtn">
+			        	    <i class="fa fa-search"></i>
+			            </span>
+                    </div>
+                    <div class="input-group  search-area">
+                        <span class="input-group-addon">
+                            <i class="fa fa-google"></i>
+                        </span>
+                        <input for="google" type="text" class="form-control searchinput" placeholder="Google Search"/>
+                        <span class="input-group-addon btn searchbtn">
+			        	    <i class="fa fa-search"></i>
+			            </span>
+                    </div>
+                </div>
+                <!--search end-->
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="head-text">
+            <p><span class="element"></span></p>
+        </div>
+    </div>
+</div>
+
+<div class="resume">
+    <img src="img/resume.png" alt="简历" style="vertical-align:bottom" data-toggle="modal" data-target="#myResume">
+</div>
+<div class="radio">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="320"
+            src="//music.163.com/outchain/player?type=4&id=84006&auto=0&height=430"></iframe>
+    <!--<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=4&id=84006&auto=0&height=32"></iframe>-->
+    <!--<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=4&id=84006&auto=0&height=90"></iframe>-->
+    <img src="img/music.png" alt="心理FM" style="vertical-align:bottom">
+</div>
+<!--作品集-->
+<div class="modal fade" id="myWorks" tabindex="-1" role="dialog">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">作品集</h4>
+            </div>
+            <div class="modal-body">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        前端
+                    </div>
+                    <div class="panel-body">
+                        <div class="list-group">
+                            <button type="button" class="list-group-item"
+                                    onclick="window.location.href='/Works/Fullpage/index.html'">FullpageJS小试（旧版主页）
+                            </button>
+                            <button type="button" class="list-group-item"
+                                    onclick="window.location.href='/Works/AvatarCrop/index.html'">头像裁剪
+                            </button>
+                            <button type="button" class="list-group-item"
+                                    onclick="window.location.href='/Works/addr/index.html'">地址三级联动
+                            </button>
+                            <button type="button" class="list-group-item"
+                                    onclick="window.location.href='/Works/video/index.html'">VideoJS小试
+                            </button>
+                            <button type="button" class="list-group-item"
+                                    onclick="window.location.href='/Works/ClientInfo/index.html'">客户端信息
+                            </button>
+                            <button type="button" class="list-group-item"
+                                    onclick="window.location.href='/Works/SubwayFee/index.html'">地铁计费
+                            </button>
+                            <button type="button" class="list-group-item"
+                                    onclick="window.location.href='/Works/snake.html'">贪吃蛇
+                            </button>
+                            <button type="button" class="list-group-item"
+                                    onclick="window.location.href='/Works/Tangram/tangram.html'">七巧板
+                            </button>
+                            <button type="button" class="list-group-item"
+                                    onclick="window.location.href='/Works/Cube/index.html'">立方体
+                            </button>
+                        </div>
+                    </div>
+                    <div class="panel-heading">
+                        后端
+                    </div>
+                    <div class="panel-body">
+                        <button type="button" class="list-group-item" onclick="window.location.href='/MyClass/'">
+                            信息收集系统
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="list-group">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myResume" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">About Me</h4>
+            </div>
+            <div class="modal-body">
+                <div class="panel panel-info">
+                    <div class="panel-heading">联系我</div>
+                    <div class="panel-body">
+                        <div class="list-group">
+                            <a href="http://www.zhangdanyang.com/" class="list-group-item">【主站点】（基于阿里云虚拟主机+WordPress搭建）</a>
+                            <a href="http://www.jianshu.com/users/97887a368d79" class="list-group-item ">【博客】简书（目前更新最频繁）</a>
+                            <a href="https://www.facebook.com/zhangdanyang" class="list-group-item ">【Fork me on github】（持续更新ing…）</a>
+                            <a href="http://weibo.com/zhangdanyangzdy" class="list-group-item ">【微博】（基本上每天都登录，有问题可以在微博上联系我）</a>
+                            <a href="https://www.facebook.com/zhangdanyang" class="list-group-item ">【FaceBook】（国外社交网络都不怎么玩…）</a>
+                            <a href="http://www.zhangdanyang.com/contact" class="list-group-item ">【more…】</a>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-block" onclick="window.location.href='resume.html'">查看电子版完整简历</button>
+                <button type="button" class="btn btn-primary btn-block" id="btnPaperResume">下载纸质版简历</button>
+                <div class="btn-group btn-group-justified" id="paperResume" style="display:none;">
+                    <div class="btn-group" role="group">
+                        <a class="btn btn-default" href="file/resume.jpg" download="张丹阳的简历.jpg">JPG</a>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <a class="btn btn-default" href="file/resume.pdf" download="张丹阳的简历.pdf">PDF</a>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <a class="btn btn-default" href="file/resume.png" download="张丹阳的简历.psd">PSD</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/typed.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
